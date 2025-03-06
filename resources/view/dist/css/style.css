@@ -1,0 +1,78 @@
+:root {
+    --dark-1: #111111;
+    --dark-2: #181818;
+    --dark-3: #1D1D1D;
+    --dark-4: #2C2C2C;
+    --light-1: #FFF;
+}
+
+* {
+    font-family: 'Inter';
+}
+
+/* CORES PARA O BACKGROUND */
+.bg-dark-1 {
+    background-color: #111111 !important;
+} 
+.bg-dark-2 {
+    background-color: #181818 !important;
+} 
+.bg-dark-3 {
+    background-color: #1D1D1D !important;
+} 
+.bg-dark-4 {
+    background-color: #2C2C2C !important;
+} 
+.bg-light-1 {
+    background-color: #FFF !important;
+}
+
+/* CORES PARA O TEXTO */
+.txt-dark-1 {
+    color: #111111 !important;
+} 
+.txt-dark-2 {
+    color: #181818 !important;
+} 
+.txt-dark-3 {
+    color: #1D1D1D !important;
+} 
+.txt-dark-4 {
+    color: #2C2C2C !important;
+} 
+.txt-light-1 {
+    color: #FFF !important;
+}
+
+/* COR DA BORDA */
+.bc-dark-4 {
+    border-color: var(--dark-4) !important;
+}
+
+/* RAIO DA BORDA */
+.br-5 {
+    border-radius: 5px !important;
+}
+
+/* ESPESSURA DA FONTE */
+.fw-3 { font-weight: 300; }
+.fw-4 { font-weight: 400; }
+.fw-5 { font-weight: 500; }
+.fw-6 { font-weight: 600; }
+.fw-7 { font-weight: 700; }
+.fw-8 { font-weight: 800; }
+
+/* TAMANHO DA FONTE */
+.f-s-1 { font-size: 13px; }
+.f-s-2 { font-size: 15px; }
+.f-s-3 { font-size: 17px; }
+.f-s-4 { font-size: 20px; }
+.f-s-5 { font-size: 25px; }
+
+
+#testimonies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
