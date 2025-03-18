@@ -39,7 +39,7 @@ class Router
      */
     public function __construct($url)
     {
-        $this->request = new Request();
+        $this->request = new Request($this);
         $this->url = $url;
         $this->setPrefix();
     }
@@ -214,5 +214,14 @@ class Router
         } catch (Exception $e) {
             return new Response($e->getCode(), $e->getMessage());
         }
+    }
+
+    /**
+     * Método responsável por retornar a URL acual
+     * @return string
+     */
+    public function getCurrentUrl()
+    {
+        return $this->url . $this->getUri();
     }
 }
