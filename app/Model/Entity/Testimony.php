@@ -31,7 +31,7 @@ class Testimony
     public $data;
 
     /**
-     * Método responsável por cadastrar a instância actual no banco de ddados
+     * Método responsável por cadastrar a instância actual no banco de dados
      * @return boolean
      */
     public function cadastrar() 
@@ -48,6 +48,39 @@ class Testimony
 
         // SUCESSO
         return true;
+    }
+    
+    /**
+     * Método responsável por actualizar os dados do banco com os dados da instância actual
+     * @return boolean
+     */
+    public function actualizar() 
+    {
+        // ACTUALIZA O DEPOIMENTO NO BANCO DE DADOS
+        return (new Database('depoimentos'))->update('id =' . $this->id, [
+            'nome' => $this->nome,
+            'mensagem' => $this->mensagem,
+        ]);
+    }
+    
+    /**
+     * Método responsável por excluir um depoimento do banco de dados
+     *  @return boolean
+     */
+    public function excluir() 
+    {
+        // EXCLUI O DEPOIMENTO DO BANCO DE DADOS
+        return (new Database('depoimentos'))->delete('id =' . $this->id);
+    }
+
+    /**
+     * método responsável por retornar um depoimento com base no seu id
+     * @param integer $id
+     * @return Testimony
+     */
+    public static function getTestimonyById($id)
+    {
+        return self::getTestimonies('id = ' . $id)->fetchObject(self::class);
     }
 
     /**
