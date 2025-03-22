@@ -23,6 +23,6 @@ class Home extends Page
         ]);
 
         // RETORNA A VIEW DA PAGINA
-        return parent::getPage('HOME - Driver Labs', $content);
+        return parent::getPage('HOME - DriverLabs', $content);
     }
 }

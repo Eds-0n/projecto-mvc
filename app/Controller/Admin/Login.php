@@ -25,7 +25,7 @@ class Login extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPage('login > Driver Labs', $content);
+        return parent::getPage('login > DriverLabs', $content);
     }
 
     /**

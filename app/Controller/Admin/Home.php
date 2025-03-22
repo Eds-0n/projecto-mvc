@@ -17,6 +17,6 @@ class Home extends Page
         $content = View::render('admin/modules/home/index', []);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Dashboard > Driver Labs', $content, 'home');
+        return parent::getPanel('Dashboard > DriverLabs', $content, 'home');
     }
 }

@@ -61,7 +61,7 @@ class Testimony extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Depoimentos > Driver Labs', $content, 'testimonies');
+        return parent::getPanel('Depoimentos > DriverLabs', $content, 'testimonies');
     }
 
     /**
@@ -80,7 +80,7 @@ class Testimony extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Cadastar depoimento > Driver Labs', $content, 'testimonies');
+        return parent::getPanel('Cadastar depoimento > DriverLabs', $content, 'testimonies');
     }
 
     /**
@@ -155,7 +155,7 @@ class Testimony extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Editar depoimento > Driver Labs', $content, 'testimonies');
+        return parent::getPanel('Editar depoimento > DriverLabs', $content, 'testimonies');
     }
 
     /**
@@ -211,7 +211,7 @@ class Testimony extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Excluir depoimento > Driver Labs', $content, 'testimonies');
+        return parent::getPanel('Excluir depoimento > DriverLabs', $content, 'testimonies');
     }
     
     /**

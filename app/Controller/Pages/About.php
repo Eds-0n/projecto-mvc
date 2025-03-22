@@ -25,6 +25,6 @@ class About extends Page
         ]);
 
         // RETORNA A VIEW DA PAGINA
-        return parent::getPage('ABOUT - Driver Labs', $content);
+        return parent::getPage('ABOUT - DriverLabs', $content);
     }
 }

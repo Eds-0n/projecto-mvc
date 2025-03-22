@@ -60,7 +60,7 @@ class Testimony extends Page
         ]);
 
         // RETORNA A VIEW DA PAGINA
-        return parent::getPage('DEPOIMENTOS - Driver Labs', $content);
+        return parent::getPage('DEPOIMENTOS - DriverLabs', $content);
     }
 
     /**

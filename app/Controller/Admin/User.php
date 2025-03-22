@@ -60,7 +60,7 @@ class User extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Usuários > Driver Labs', $content, 'users');
+        return parent::getPanel('Usuários > DriverLabs', $content, 'users');
     }
 
     /**
@@ -79,7 +79,7 @@ class User extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Cadastar usuário > Driver Labs', $content, 'users');
+        return parent::getPanel('Cadastar usuário > DriverLabs', $content, 'users');
     }
 
     /**
@@ -168,7 +168,7 @@ class User extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Editar usuário > Driver Labs', $content, 'users');
+        return parent::getPanel('Editar usuário > DriverLabs', $content, 'users');
     }
 
     /**
@@ -235,7 +235,7 @@ class User extends Page
         ]);
 
         // RETORNA A PÁGINA COMPLETA
-        return parent::getPanel('Excluir usuario > Driver Labs', $content, 'users');
+        return parent::getPanel('Excluir usuario > DriverLabs', $content, 'users');
     }
 
     /**
