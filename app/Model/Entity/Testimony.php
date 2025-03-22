@@ -4,7 +4,7 @@ namespace App\Model\Entity;
 
 use \App\Db\Database;
 
-class Testimony 
+class Testimony
 {
     /**
      * ID do depoimento
@@ -34,7 +34,7 @@ class Testimony
      * Método responsável por cadastrar a instância actual no banco de dados
      * @return boolean
      */
-    public function cadastrar() 
+    public function cadastrar()
     {
         // DEFINE A DATA
         $this->data = date('Y-m-d H:i:s');
@@ -49,12 +49,12 @@ class Testimony
         // SUCESSO
         return true;
     }
-    
+
     /**
      * Método responsável por actualizar os dados do banco com os dados da instância actual
      * @return boolean
      */
-    public function actualizar() 
+    public function actualizar()
     {
         // ACTUALIZA O DEPOIMENTO NO BANCO DE DADOS
         return (new Database('depoimentos'))->update('id =' . $this->id, [
@@ -62,12 +62,12 @@ class Testimony
             'mensagem' => $this->mensagem,
         ]);
     }
-    
+
     /**
      * Método responsável por excluir um depoimento do banco de dados
      *  @return boolean
      */
-    public function excluir() 
+    public function excluir()
     {
         // EXCLUI O DEPOIMENTO DO BANCO DE DADOS
         return (new Database('depoimentos'))->delete('id =' . $this->id);
@@ -95,5 +95,4 @@ class Testimony
     {
         return (new Database('depoimentos'))->select($where, $order, $limit, $fields);
     }
-
 }
